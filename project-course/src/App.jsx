@@ -3,6 +3,9 @@ import imgUno from './assets/images/img-1.jpg';
 import MyButton from './components/MyButton';
 import WelcomeText from './components/WelcomeText';
 import ItemFrut from './components/ItemFrut';
+import Controlados from "./components/Controlados.jsx";
+import NoControlados from "./components/NoControlados.jsx";
+import Cat from "./components/Cat.jsx";
 
 const App = () => {
     const title = "Mi titulo desde una constante";
