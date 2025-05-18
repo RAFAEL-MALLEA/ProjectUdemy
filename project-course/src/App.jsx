@@ -28,6 +28,16 @@ const App = () => {
                 return  <ItemFrut key={index} frutas={frut}/>
                 })}
             </ul>
+
+            <div className="container">
+                <h1>Formularios controlados</h1>
+                <Controlados /><br /><br /><br />
+    
+                <h1>Formularios no controlados</h1>
+                <NoControlados />
+    
+                <Cat />
+            </div>
         </>
     );
 };
