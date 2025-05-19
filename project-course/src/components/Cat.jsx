@@ -5,6 +5,7 @@ const Cat = () => {
 
     
 
+
     const handleClick = () => {
         // setCat(...cat, year: cat.year + 1);
         setCat((prev) => ({ ...prev, age: cat.age + 1 }));

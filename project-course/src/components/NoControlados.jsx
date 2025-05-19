@@ -1,4 +1,5 @@
 import { useRef, useState } from "react";
+import Swal from "sweetalert2";
 
 const NoControlados = () => {
 
@@ -20,8 +21,13 @@ const NoControlados = () => {
 
             //validar los datos del formulario
 
-            if (!title.trim() || !description.trim() || !state.trim()) 
-                return setError("rellene todos los campos");
+            if (!title.trim() || !description.trim() || !state.trim() )  {
+                        return  Swal.fire({
+                                icon: "error",
+                                title: "Oops...",
+                                text: "Titulo y descripción son obligatorios",
+                        });
+                    }
             
 
             //enviar los datos a la api
